@@ -3,67 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOP</title>
+    <title>ความเหมือนและความแตกต่างของ Java, C++, Python ใน OOP</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        nav {
-            margin: 0;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-        }
-        nav a {
-            color: white;
-            margin-right: 15px;
-            text-decoration: none;
-        }
-        section {
+            line-height: 1.6;
             margin: 20px;
-            padding: 20px;
-            background-color: white;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        h1 {
+            color: #4CAF50;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        hr {
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>ยินดีต้อนรับสู่หน้าเว็บตัวอย่าง</h1>
-    </header>
+    <h1>สิ่งที่เหมือนกันของ Java, C++, Python ในการเขียน OOP</h1>
+    
+    <h2>แนวคิดเหมือนกัน</h2>
+    <ul>
+        <li>มีคลาส (Class), มีวัตถุ (Object), การสืบทอด (Inheritance), การซ่อนข้อมูล (Encapsulation), การพ้องรูป (Polymorphism) เหมือนกัน</li>
+        <li>มีคลาสและวัตถุ: ทุกภาษามีคลาสที่ใช้สร้างวัตถุ</li>
+        <li>สืบทอดได้: เขียนคลาสใหม่แล้วสืบทอดจากคลาสเก่าได้</li>
+        <li>Polymorphism เหมือนกัน: ทุกภาษามีฟีเจอร์ให้เขียนเมธอดชื่อเดียวกัน แต่ทำงานต่างกันในแต่ละคลาสได้</li>
+    </ul>
+    
+    <hr>
+    
+    <h1>ความแตกต่างกันของ Java, C++, Python ในการเขียน OOP</h1>
+    
+    <h2>จัดการหน่วยความจำต่างกัน</h2>
+    <ul>
+        <li><strong>Java:</strong> มีตัวจัดการหน่วยความจำอัตโนมัติ เรียกว่า Garbage Collector พอออบเจ็กต์ไม่ได้ใช้แล้วมันจะลบออกให้เอง</li>
+        <li><strong>C++:</strong> ไม่มีอัตโนมัติ ต้องจัดการเอง ต้องคอยใช้ <code>new</code> ตอนสร้างออบเจ็กต์ แล้วก็ใช้ <code>delete</code> เวลาจะลบ</li>
+        <li><strong>Python:</strong> จัดการให้เหมือน Java มี Garbage Collection แต่ Python เข้าใจง่ายกว่า</li>
+    </ul>
 
-    <nav>
-        <a href="#">หน้าแรก</a>
-        <a href="#">เกี่ยวกับเรา</a>
-        <a href="#">ติดต่อเรา</a>
-    </nav>
+    <h2>ตัวแปรและชนิดข้อมูล</h2>
+    <ul>
+        <li><strong>Java:</strong> ต้องประกาศตัวแปรพร้อมบอกชนิดข้อมูลก่อนใช้</li>
+        <li><strong>C++:</strong> ต้องทำแบบเดียวกับ Java</li>
+        <li><strong>Python:</strong> ไม่ต้องประกาศชนิดข้อมูลล่วงหน้า</li>
+    </ul>
+    
+    <h2>การสืบทอดหลายคลาส (Multiple Inheritance)</h2>
+    <ul>
+        <li><strong>Java:</strong> ไม่สามารถสืบทอดจากหลายคลาสได้ (ใช้ Interface แทน)</li>
+        <li><strong>C++:</strong> สืบทอดจากหลายคลาสได้ตรง ๆ เลย</li>
+        <li><strong>Python:</strong> สืบทอดจากหลายคลาสได้ตรง ๆ เลย</li>
+    </ul>
 
-    <section>
-        <h2>หัวข้อบทความ</h2>
-        <p>นี่คือเนื้อหาตัวอย่างสำหรับการแสดงผลในหน้าเว็บ</p>
-    </section>
-
-    <footer>
-        <p>© 2024 บริษัทตัวอย่าง</p>
-    </footer>
+    <h2>การใช้ Interface กับ Abstract Class</h2>
+    <ul>
+        <li><strong>Java:</strong> มีโครงสร้าง Interface และ Abstract Class ชัดเจน</li>
+        <li><strong>C++:</strong> ไม่มี Interface โดยตรง แต่ใช้ Pure Virtual Function แทนได้</li>
+        <li><strong>Python:</strong> ไม่มี Interface โดยตรง แต่มี Abstract Base Class (ABC) ที่ทำหน้าที่คล้าย ๆ กัน</li>
+    </ul>
 
 </body>
 </html>
